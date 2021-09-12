@@ -19,9 +19,34 @@ calculate year of retirement
 
 package exercise06;
 
+import java.util.Scanner;
+
 public class Solution06 {
 
+
+
     public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("What is your current age? ");
+
+        int currentAge = sc.nextInt();
+
+        System.out.println("What age would you like to retire? ");
+
+        int retireAge = sc.nextInt();
+
+
+    }
+
+    public String yearsTillRetire(int currentAge, int retireAge) {
+
+
+    }
+
+    public int setAge(int currentAge){
+
 
     }
 }
