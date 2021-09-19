@@ -1,0 +1,9 @@
+
+S	java:S106!"9Replace this use of System.out or System.err by a logger.(Ý©ÕÓþÿÿÿÿ
+W	java:S125#"<This block of commented-out lines of code should be removed.(Ü¦ú{8ÑÇˆî¿/
+N	java:S106."9Replace this use of System.out or System.err by a logger.(º­¹—
+S	java:S1064"9Replace this use of System.out or System.err by a logger.(ß˜Üñùÿÿÿÿ
+S	java:S106A"9Replace this use of System.out or System.err by a logger.(òà­Ãûÿÿÿÿ
+O
+java:S1144H"3Remove this unused private "setOrderAmount" method.(ãƒ)8ÑÇˆî¿/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ßš½ùÿÿÿÿ
