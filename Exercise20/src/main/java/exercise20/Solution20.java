@@ -31,8 +31,8 @@ public class Solution20 {
 
     public static void main(String[] args) {
         System.out.print("What is the order amount?");
-        orderAmount = sc.nextDouble();
-        //setOrderAmount();
+        String input = sc.nextLine();
+        setOrderAmount(Double.parseDouble(input));
         setTaxRate();
         output();
     }
@@ -43,15 +43,15 @@ public class Solution20 {
         NumberFormat dollarFormat = NumberFormat.getCurrencyInstance(usa);
         double tax = taxRate * orderAmount;
         orderTotal = Math.ceil((tax + orderAmount)*100) / 100;
-        System.out.printf("The tax is %s.%nThe total is %s.",dollarFormat.format(tax),dollarFormat.format(orderAmount));
+        System.out.printf("The tax is %s.%nThe total is %s.",dollarFormat.format(tax),dollarFormat.format(orderTotal));
 
         }
 
 
     private static void setTaxRate() {
         System.out.print("What state do you live in?");
-        String state;
-        state = sc.nextLine();
+        String state = sc.nextLine();
+
         if(state.equals("Wisconsin")) {
             taxRate += 0.05;
             promptCountyCheck();

@@ -34,11 +34,13 @@ public class Solution09 {
         roomWidth = sc.nextInt();
         calculateSquareFeet();
         calculateGallons();
-        System.out.printf("You will need %d gallons of paint to cover %d square feet.",(int)Math.ceil(gallons),squareFeet);
+        System.out.printf("You will need %d gallons of paint to cover %d square feet.",gallons,squareFeet);
     }
 
     private static void calculateGallons() {
-        gallons = squareFeet / SQ_FEET_PER_GALLON;
+        int exactGallons = squareFeet / SQ_FEET_PER_GALLON;
+        gallons = (squareFeet % SQ_FEET_PER_GALLON != 0 ? exactGallons + 1 : exactGallons);
+
     }
 
    private static void calculateSquareFeet() {
